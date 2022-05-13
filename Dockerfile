@@ -14,6 +14,7 @@ RUN pip install --upgrade pip &&\
 
 # Expose port 80
 EXPOSE 80
+ 
 
 # Run app.py at container launch
 CMD ["python", "web.py"]
