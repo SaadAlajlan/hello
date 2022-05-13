@@ -10,9 +10,9 @@ env:
 	python3 --version
 	which pytest
 	which pylint
-
+	
 lint:
-	pylint --load-plugins pylint_flask --disable=R,C flask_app/web.py nlib csvcli
+	pylint --disable=R,C flask_app/web.py
 
 lint-circleci:                                                              
 	pylint --output-format=parseable --load-plugins pylint_flask --disable=R,C flask_app/*.py nlib csvcli > $$CIRCLE_ARTIFACTS/pylint.html  
